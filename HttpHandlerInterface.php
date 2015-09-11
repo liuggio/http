@@ -5,7 +5,7 @@ namespace Liuggio\Http;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
-interface HttpInterface
+interface HttpHandlerInterface
 {
     /**
      * @param ServerRequestInterface $request

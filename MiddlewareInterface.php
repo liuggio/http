@@ -2,10 +2,10 @@
 
 namespace Liuggio\Http;
 
-interface MiddlewareInterface extends HttpInterface
+interface MiddlewareHandlerInterface extends HttpHandlerInterface
 {
     /**
-     * @param HttpInterface $next
+     * @param HttpHandlerInterface $next
      */
-    public function addNext(HttpInterface $next);
+    public function addNext(HttpHandlerInterface $next);
 }
