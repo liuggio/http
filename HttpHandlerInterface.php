@@ -2,14 +2,14 @@
 
 namespace Liuggio\Http;
 
-use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
 interface HttpHandlerInterface
 {
     /**
-     * @param ServerRequestInterface $request
-     * @param ResponseInterface      $response
+     * @param RequestInterface  $request
+     * @param ResponseInterface $response
      */
-    public function handle(ServerRequestInterface $request, ResponseInterface &$response);
+    public function handle(RequestInterface $request, ResponseInterface &$response);
 }
